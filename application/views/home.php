@@ -1,38 +1,4 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
-        <link href="style.css" rel="stylesheet">
-    </head>
-    <body>
-        <header>
-            <h1>HIGH SCHOOL.</h1>
-        </header>
-        <nav>
-            <ul>
-                <li>
-                    <a href="">Inicio</a>
-                </li>
-                <li>
-                    <a href="">Institucional</a>
-                </li>
-                <li>
-                    <a href="">Sedes</a>
-                </li>
-                <li>
-                    <a href="">Proyectos</a>
-                </li>
-                <li>
-                    <a href="">Servicios</a>
-                </li>
-                <li>
-                    <a href="">Contacto</a>
-                </li>
-                <li>
-                    <a href="">Iniciar Sesión</a>
-                </li>
-            </ul>
-        </nav>
+    <?php $this->load->view('header'); ?>
         <section class="slide">
             <img src="img/img1.jpeg" alt="slide" />
         </section>
@@ -69,13 +35,12 @@
                     </td>
                 </tr>
             </table>
+            <div style="text-align: center; width: 100%;">
+                <h1>
+                    Cantidad de visitas
+                    <br>
+                    <?php echo $quantity_views ?>
+                </h1>
+            </div>
         </section>
-        <footer>
-            <ul>
-                <li>&copy; Todos los derechos reservados</li>
-                <li>HIGH SCHOOL</li>
-                <li>2019</li>
-            </ul>
-        </footer>
-    </body>
-</html>
+        <?php $this->load->view('footer'); ?>
